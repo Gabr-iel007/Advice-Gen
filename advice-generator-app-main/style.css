@@ -1,0 +1,65 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(218, 23%, 16%);
+}
+
+.cover {
+  width: 500px;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 1rem;
+  position: relative;
+}
+
+.cardContainer {
+  padding: 2rem 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.cardContainer p {
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 4px;
+  font-size: 13px;
+}
+
+h2 {
+  color: hsl(193, 38%, 86%);
+  font-size: 28px;
+}
+
+picture img {
+  margin-bottom: 1rem;
+}
+
+button {
+  position: absolute;
+  bottom: -30px;
+  background-color: hsl(150, 100%, 66%);
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: hsl(150, 100%, 72%);
+  transform: scale(1.1); 
+  box-shadow: 0 0 15px hsl(150, 100%, 66%);
+}
+
+@media screen and (max-width: 500px) {
+  .cardContainer {
+    width: 350px;
+  }
+}
